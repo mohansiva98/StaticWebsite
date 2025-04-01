@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMo'sCafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            background-image: url('https://s3.ap-south-1.amazonaws.com/www.themocafe-spy.shop/profile.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Poppins', sans-serif;
+            color: #f5f5dc;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        header {
+            background: rgba(30, 30, 30, 0.85);
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 10px 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ff5733;
+            text-decoration: underline;
+        }
+
+        /* Fix for fixed header */
+        main {
+            margin-top: 80px;
+        }
+
+        /* Menu Items */
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .menu-item {
+            background: rgba(139, 69, 19, 0.9);
+            color: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            background: rgba(165, 42, 42, 0.9);
+        }
+
+        /* Contact Information */
+        .contact-info {
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #ffcc00;
+        }
+
+        /* Form Styling */
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            width: 60%;
+            max-width: 500px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ffcc00;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: rgb(252, 246, 246);
+        }
+
+        button {
+            background: #ffcc00;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: #ff5733;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            margin: 0 12px;
+            color: #ffcc00;
+            font-size: 26px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #ff5733;
+            transform: scale(1.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .menu-item {
+                width: 90%;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to TheMo'sCafe</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <h3>Espresso</h3>
+                    <p>Strong and bold coffee shot.</p>
+                    <p>Price: $2.50</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Cappuccino</h3>
+                    <p>Rich espresso with steamed milk and foam.</p>
+                    <p>Price: $3.50</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Americano</h3>
+                    <p>Rich Americano with steamed milk and foam.</p>
+                    <p>Price: $3.50</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Mocha</h3>
+                    <p>Rich Mocha with steamed milk and foam.</p>
+                    <p>Price: $3.50</p>
+                </div>
+                <div class="menu-item">
+                    <h3>BlackCoffee</h3>
+                    <p>Rich in Black.</p>
+                    <p>Price: $3.50</p>
+                </div>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/mohan_sivakrish?igsh=YWU1anNsZHZrYmx6&utm_source=qr" target="_blank">📷 Instagram</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Successfully registered!");
+        });
+    </script>
+</body>
+</html>
